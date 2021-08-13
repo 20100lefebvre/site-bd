@@ -1,2 +1,0 @@
-# site-bd
-diaporama bd
