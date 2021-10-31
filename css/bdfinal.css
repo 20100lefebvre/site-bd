@@ -27,6 +27,19 @@ header{
     padding-bottom:9px;
 }
 
+a:link{
+    text-decoration: none;
+    color:black;
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    font-style: italic;
+    color:#C13584;
+}
+
+
 h1{
 	letter-spacing: 1.5px;
 }
@@ -58,22 +71,35 @@ text-align: center;
         flex-wrap:wrap; 
         padding: 7px;
         }
+        label{
+        padding-right: 11px;
+        }
         ul li{
         border-radius: 50%;
         list-style: none;
         display: flex;
         justify-content: center;
+
+        }
+        .thumb_actu{
         color:gray;
         }
         .navigation img{
         border-radius: 50%;
         height: 50px;
         width: 50px;
-        padding: 7px;
+        padding: 11px;
         }
         .navigation img:hover{
             transform: translateX(8px);
+            opacity: .7;
+            transition: 0.9s;
+            cursor:pointer;
+        }
+        .thumb_actu:hover{
+            transform: translateX(8px);
             color:green;
+            cursor:pointer;
         }
 
 footer{
