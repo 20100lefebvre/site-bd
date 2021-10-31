@@ -37,6 +37,7 @@ a:visited{
 a:hover{
     font-style: italic;
     color:#C13584;
+    transition: 0.9s;
 }
 
 
