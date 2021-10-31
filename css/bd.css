@@ -11,6 +11,11 @@ padding:0;
 font-family: 'Poppins', sans-serif;
 }
 
+body{
+height: 100vh;
+width: 100%;
+}
+
 img{
 	display: block;
 	width:100%;
@@ -33,7 +38,7 @@ header{
 	border-bottom: 2px solid black;
 	text-align:center;
 	width:100%;
-	height: auto;
+	height: 10%;
 }
 
 h1{
@@ -61,7 +66,8 @@ p{
 /*erreur*/
 #body{
 	background-color: black;
-	width:100vh;
+	height: 100vh;
+	width: 100%;
 }
 #erreur{
 	width: 100%;
@@ -79,6 +85,8 @@ p{
 }
 /*footer*/
 footer{
+	width:100%;
+	height: 10%;
 	border-top: 2px solid black;
 	text-align:center;
 	padding: 10px;
@@ -91,54 +99,57 @@ a{
 }
 /* logo */
 ul li{
-border-radius: 50%;
 list-style: none;
 display: flex;
 justify-content: center;
 }
 
 .logo{
-	border-radius: 50%;
-	box-shadow: 7px 12px 18px lightgray;
-	padding:5px;
-	width:40px;
+border-radius: 50%;
+box-shadow: 7px 12px 18px lightgray;
+padding:5px;
+width:40px;
 }
 .logo:hover{
 	transform: translateX(8px);
 }
 /*---------------------------------------------------------------------------------------------------------------*/
 /*slider*/
-img{
-	display: block;
-	width:100%;
-	height:auto;
-	box-shadow: px 12px 18px lightgray;
-}
+/*La planche en grand*/
 #comics{
- 	display: flex;
-	width:auto;
-	height: 30%;
+display: flex;
+width:auto;
+height: 80%;
 }
+/*l'ensemble des boutons*/
 .summary{
-	display: grid;
-	grid-template-columns: repeat(3,1fr);
-	width:30%;
-	height: 50%;
-	margin-top: 15%;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+width:30%;
+height: 50%;
+margin-top: 15%;
+}
+/*boutons*/
+img{
+display: block;
+width:100%;
+height:auto;
+box-shadow: px 12px 18px lightgray;
 }
 
+/*tout entre header et footer*/
 section{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	height: auto;
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 80%;
 }
 section .navigation li{
-	cursor: pointer;
-	list-style: none;
-	display: flex;
-	width: 50px;
-	padding: 20px;
+cursor: pointer;
+list-style: none;
+display: flex;
+width: 50px;
+padding: 20px;
 }
 section .navigation li:hover{
 	transform: translateY(-8px);
@@ -146,23 +157,41 @@ section .navigation li:hover{
 
 /*---------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width:180px) and (max-width: 1300px) {
+@media screen and (min-width:500px) and (max-width: 1300px) {
 
-#body{
-	width:100%;
-	height:auto;
-	display:flex;
-	flex-direction: column;
+body{
+height: 100vh;
+width: 100%;
+display:flex;
+flex-direction: column;
 }
 
 header{
-	border-bottom: 2px solid black;
-	text-align:center;
-	width:100%;
+border-bottom: 2px solid black;
+text-align:center;
+width:100%;
+height:10%;
+}
+p{
+padding-left: 7px;
+padding-right: 7px;
+padding-top: 2px;
+padding-bottom: 2px;
+}
+section{
+width:100%;
+height: 80%;
+}
+footer{
+width:100%;
+height: 10%;
+display: flex;
+justify-content: center;
+flex-direction: column;
 }
 h1{
-	letter-spacing: 1px;
-	font-size: 20px;
+letter-spacing: 1px;
+font-size: 18px;
 }
 
 h2{
@@ -174,40 +203,38 @@ h2{
 p{
 	text-align: center;
 }
+/*img bouton*/
 img{
 	box-shadow: none;
+	font-size: 8px;
 }
- section{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-}
-#slider{
-	width:90%;
-	height:auto;
-	padding:15px;
-	margin:12px;
-	border-radius:12%;
-}
+/*ce qui encapsule img planche*/
 #comics{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	border-bottom: 2px solid black;
-	justify-content: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+/*img planche*/
+#slider{
+width:100%;
+height: 100%;
+padding:5px;
+margin:2px;
 }
 
+
 .summary{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin: 5px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 
 section .navigation li{
@@ -217,5 +244,68 @@ section .navigation li{
 	width: 50px;
 	padding: 10px;
 }
+.copyright{
+font-size: 12px;
+}
+.logo{
+width:30px;
+height: 30px;
+}
 
+}
+@media screen and (min-width:180px) and (max-width: 500px){
+body{
+height: auto;
+width: 100%;
+display:flex;
+flex-direction: column;
+}
+header{
+border-bottom: 2px solid black;
+text-align:center;
+width:100%;
+height:10%;
+}
+section{
+width:100%;
+height: auto;
+}
+footer{
+width:100%;
+height: auto;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+/*ce qui encapsule img planche*/
+#comics{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}	
+/*slider*/
+/*La planche en grand*/
+#comics{
+display: flex;
+width:auto;
+height: 100%;
+}
+	/*l'ensemble des boutons*/
+	.summary{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	width:30%;
+	height: 50%;
+	margin-top: 15%;
+	}
+	/*boutons*/
+	img{
+	display: block;
+	width:100%;
+	height:auto;
+	box-shadow: px 12px 18px lightgray;
+	}	
 }

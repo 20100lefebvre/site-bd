@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*RESET*/
+@viewport {
+width: device-width; /* largeur du viewport */
+zoom: 1; /* zoom initial à 1.0 */
+}
+
+*{
+margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif;
+}
+
+/*-------------------------------------------------------------------------*/
+ /* Media Query for Laptops and Desktops */
+ /* Media Query for Large screens */
+ @media (min-width: 901px){
+body{
+    height: 100vh;
+    width: 100%;
+}
+header{
+    height:10vh;
+    width:100%;
+    text-align:center;
+    border-bottom: 2px solid black;
+    padding-bottom:9px;
+}
+
+h1{
+	letter-spacing: 1.5px;
+}
+p{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+/*-------------------------------------------------------------------------*/
+section{
+display:grid;
+grid-template-columns: 50% 50%;
+text-align: center;
+    }
+    #slider{
+        height:80vh;
+        width:auto;
+    }
+    /*slider*/
+    /*La planche en grand*/
+        /*l'ensemble des boutons*/
+        .summary{
+        padding:9px;
+        }
+        .navigation{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap; 
+        padding: 7px;
+        }
+        ul li{
+        border-radius: 50%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        }
+        .navigation img{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        padding: 7px;
+        }
+        .navigation img:hover{
+            transform: translateX(8px);
+        }
+
+footer{
+    height:10vh;
+    width:100%;
+    border-top: 2px solid black;
+	text-align:center;
+	padding: 10px;
+}        
+.logo{
+    border-radius: 50%;
+    box-shadow: 7px 12px 18px lightgray;
+    padding:5px;
+    width:40px;
+}
+.logo:hover{
+    transform: translateX(8px);
+} 
+  /*-------------------------------------------------------------------------*/
+
+  /*-------------------------------------------------------------------------*/
+}
+/*-------------------------------------------------------------------------*/
+ /* Media Query for low resolution  Tablets, Ipads */
+ /* Media Query for Tablets Ipads portrait mode */
+ /*@media (min-width: 481px) and (max-width: 1024px) {}*/
+/*-------------------------------------------------------------------------*/
+
+@media (max-width: 900px){
+/*-------------------------------------------------------------------------*/
+header{
+    text-align:center;
+    border-bottom: 2px solid black;
+}
+h1{
+	letter-spacing: 1.3px;
+}
+p{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+/*-------------------------------------------------------------------------*/
+section{
+display: flex;
+flex-direction: column;
+}
+/*slider*/
+/*La planche en grand*/
+#slider{
+    height:100%;
+    width:100%;
+}
+
+    /*l'ensemble des boutons*/
+    .summary{
+    display: flex;
+    flex-wrap:wrap;  
+    }
+    .navigation{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap:wrap; 
+    padding: 7px;
+    }
+    ul li{
+    border-radius: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    }
+    .navigation img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 7px;
+    }
+    .navigation img:hover{
+        transform: translateX(8px);
+    }
+/*-------------------------------------------------------------------------*/       
+footer{
+	border-top: 2px solid black;
+	text-align:center;
+	padding: 10px;
+}
+.logo{
+    border-radius: 50%;
+    box-shadow: 7px 12px 18px lightgray;
+    padding:5px;
+    width:40px;
+}
+.logo:hover{
+    transform: translateX(8px);
+}
+}
