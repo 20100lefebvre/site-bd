@@ -63,6 +63,7 @@ text-align: center;
         list-style: none;
         display: flex;
         justify-content: center;
+        color:gray;
         }
         .navigation img{
         border-radius: 50%;
@@ -72,6 +73,7 @@ text-align: center;
         }
         .navigation img:hover{
             transform: translateX(8px);
+            color:green;
         }
 
 footer{

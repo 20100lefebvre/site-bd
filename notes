@@ -1,0 +1,10 @@
+convertir les img jpeg --> webp
+https://onlineconvertfree.com/fr/convert-format/jpg-to-webp/
+
+img bd: 1024 * 1714 px
+img actu: h 1714 px
+
+git add .
+git commit -m ""
+git push
+
