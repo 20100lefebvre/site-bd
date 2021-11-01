@@ -85,24 +85,29 @@ text-align: center;
         .thumb_actu{
         color:gray;
         }
-        .navigation img{
+        .navigation .thumb{
         border-radius: 50%;
         height: 50px;
         width: 50px;
         padding: 11px;
         }
+        /*boutons bd*/
         .navigation img:hover{
             transform: translateX(8px);
             opacity: .7;
             transition: 0.9s;
             cursor:pointer;
         }
+        /*boutons actu*/
         .thumb_actu:hover{
             transform: translateX(8px);
             color:green;
             cursor:pointer;
         }
-
+.actu_thumb{
+    width:100px;
+    height: auto;
+}
 footer{
     height:10vh;
     width:100%;
