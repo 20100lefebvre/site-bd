@@ -4,6 +4,7 @@ https://onlineconvertfree.com/fr/convert-format/jpg-to-webp/
 img bd: 1200 * 1714 px / 200 * 204 px
 img actu: h 1714 px / 300 * 50 px
 
+git init
 git add .
 git commit -m ""
 git push -u origin main 
