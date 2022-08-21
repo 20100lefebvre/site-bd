@@ -72,8 +72,22 @@ text-align: center;
         flex-wrap:wrap; 
         padding: 7px;
         }
+        .actu{
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap; 
+            padding: 7px;
+            }
+        .navigation2{
+            display: flex;
+            flex-direction: row;
+            margin-top: 55px;
+            flex-wrap:wrap; 
+            padding: 7px;
+        }
         label{
         padding-right: 11px;
+        
         }
         ul li{
         border-radius: 50%;
@@ -93,6 +107,18 @@ text-align: center;
         }
         /*boutons bd*/
         .navigation img:hover{
+            transform: translateX(8px);
+            opacity: .7;
+            transition: 0.9s;
+            cursor:pointer;
+        }
+        .actu img:hover{
+            transform: translateX(8px);
+            opacity: .7;
+            transition: 0.9s;
+            cursor:pointer;
+        }
+        .navigation2 img:hover{
             transform: translateX(8px);
             opacity: .7;
             transition: 0.9s;
@@ -184,6 +210,16 @@ flex-direction: column;
     flex-wrap:wrap; 
     padding: 7px;
     }
+    .actu{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap:wrap; 
+        padding: 7px;
+        }
+    .navigation2{
+        display: flex;
+        padding: 7px;
+        }
     ul li{
     border-radius: 50%;
     list-style: none;
@@ -196,9 +232,26 @@ flex-direction: column;
     width: 50px;
     padding: 7px;
     }
+    .actu img{
+        border-radius: 50%;
+        height: auto;
+        width: 75px;
+        padding: 7px;
+        }
     .navigation img:hover{
         transform: translateX(8px);
     }
+    .actu img:hover{
+        transform: translateX(8px);
+    }
+    .navigation2 img{
+        height: auto;
+        width: 150px;
+        padding: 7px;
+        }
+        .navigation2 img:hover{
+            transform: translateX(8px);
+        }
 /*-------------------------------------------------------------------------*/       
 footer{
 	border-top: 2px solid black;
